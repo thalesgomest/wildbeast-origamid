@@ -7,6 +7,12 @@ export const Structure = styled.div`
 		'header header header'
 		'sidenav content adverts'
 		'footer footer footer';
+
+	img {
+		display: block;
+		max-width: 100%;
+		border-radius: 0.313rem;
+	}
 `;
 
 export const Header = styled.header`
@@ -78,8 +84,21 @@ export const Main = styled.main`
 
 export const Footer = styled.footer`
 	grid-area: footer;
+	background: var(--primary-color);
+
+	p {
+		color: white;
+		text-align: center;
+		padding: 1.875rem;
+		font-weight: bold;
+	}
 `;
 
 export const Aside = styled.aside`
 	grid-area: adverts;
+	background: #fafbfc;
+	display: grid;
+	align-content: start;
+	padding: 1.875rem;
+	grid-gap: 1.875rem;
 `;
