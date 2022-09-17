@@ -42,12 +42,14 @@ export const Header = styled.header`
 	align-items: center;
 	@media ${device.mobile} {
 		grid-template-columns: auto;
+		min-width: 350px;
 		.logo {
 			margin-bottom: 20px;
 		}
-		nav a {
-			font-size: 1em;
+		nav ul li {
+			font-size: 0.8em;
 		}
+
 		nav ul li + li {
 			margin-left: 10px;
 		}

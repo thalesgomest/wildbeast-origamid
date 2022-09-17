@@ -14,6 +14,7 @@ import wildbest from '../../assets/imgs/wildbeast.svg';
 import wolf1 from '../../assets/imgs/wolf1.jpg';
 import wolf2 from '../../assets/imgs/wolf2.jpg';
 import wolf3 from '../../assets/imgs/wolf3.jpg';
+
 function Home() {
 	const { theme, toggleTheme } = useContext(ThemeContext);
 	return (
