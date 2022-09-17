@@ -63,6 +63,11 @@ export const Sidenav = styled.nav`
 		padding: 1.25rem;
 		border-radius: 0.313rem;
 		box-shadow: 0.313rem 0.313rem 0.938rem 0 rgba(44, 44, 44, 0.15);
+		transition: 0.1s ease-out;
+
+		&:hover {
+			background: #b07dfb;
+		}
 	}
 `;
 
