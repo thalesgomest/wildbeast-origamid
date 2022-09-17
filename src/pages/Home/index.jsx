@@ -8,13 +8,19 @@ import gato from '../../assets/icons/gato.svg';
 import cervo from '../../assets/icons/cervo.svg';
 import ovelha from '../../assets/icons/ovelha.svg';
 import leao from '../../assets/icons/leao.svg';
+import anuncio1 from '../../assets/imgs/anuncio-1.jpg';
+import anuncio2 from '../../assets/imgs/anuncio-2.jpg';
+import wildbest from '../../assets/imgs/wildbeast.svg';
+import wolf1 from '../../assets/imgs/wolf1.jpg';
+import wolf2 from '../../assets/imgs/wolf2.jpg';
+import wolf3 from '../../assets/imgs/wolf3.jpg';
 function Home() {
 	const { theme, toggleTheme } = useContext(ThemeContext);
 	return (
 		<S.Structure>
 			<S.Header>
 				<a href="#" className="logo">
-					<img src="src/assets/imgs/wildbeast.svg" alt="Wild Beast" />
+					<img src={wildbest} alt="Wild Beast" />
 				</a>
 				<nav>
 					<ul>
@@ -96,13 +102,13 @@ function Home() {
 					de DNA e estudos genéticos reafirmam que o lobo cinzento é
 					ancestral do cão doméstico.
 				</p>
-				<img src="src/assets/imgs/wolf1.jpg" alt="wolf-1" />
+				<img src={wolf1} alt="wolf-1" />
 				<p className="emphasis">
 					É um sobrevivente da Era do Gelo, originário do Pleistoceno
 					Superior, cerca de 300 mil anos atrás.[2] O sequenciamento
 					de DNA e estudos.
 				</p>
-				<img src="src/assets/imgs/wolf2.jpg" alt="wolf-2" />
+				<img src={wolf2} alt="wolf-2" />
 				<p>
 					O peso e tamanho dos lobos variam muito em todo o mundo,
 					tendendo a aumentar proporcionalmente com a latitude, como
@@ -145,18 +151,14 @@ function Home() {
 						o lobo cinzento é ancestral do cão doméstico.
 					</p>
 				</div>
-				<img
-					className="col-wide"
-					src="src/assets/imgs/wolf3.jpg"
-					alt="wolf-3"
-				/>
+				<img className="col-wide" src={wolf3} alt="wolf-3" />
 			</S.Main>
 			<S.Aside>
 				<div className="advertisement">
-					<img src="src/assets/imgs/anuncio-1.jpg" alt="anuncio-1" />
+					<img src={anuncio1} alt="anuncio-1" />
 				</div>
 				<div className="advertisement">
-					<img src="src/assets/imgs/anuncio-2.jpg" alt="anuncio-2" />
+					<img src={anuncio2} alt="anuncio-2" />
 				</div>
 			</S.Aside>
 			<S.Footer>
