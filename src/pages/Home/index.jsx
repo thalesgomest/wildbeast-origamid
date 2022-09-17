@@ -43,7 +43,7 @@ function Home() {
 					</li>
 					<li>
 						<a href="#">
-							<img src="src/assets/icons/vaca.svg" alt="ovelha" />
+							<img src="src/assets/icons/vaca.svg" alt="vaca" />
 						</a>
 					</li>
 					<li>
@@ -72,21 +72,21 @@ function Home() {
 				<div className="characteristics">
 					<div>
 						<span className="number">72</span>
-						<span className="labe">kg</span>
+						<span className="label">kg</span>
 					</div>
 					<div>
-						<span className="numero">13</span>
+						<span className="number">13</span>
 						<span className="label">kg</span>
 					</div>
 				</div>
-				<p>
+				<p className="col-wide">
 					É um sobrevivente da Era do Gelo, originário do Pleistoceno
 					Superior, cerca de 300 mil anos atrás.[2] O sequenciamento
 					de DNA e estudos genéticos reafirmam que o lobo cinzento é
 					ancestral do cão doméstico.
 				</p>
 				<img src="src/assets/imgs/wolf1.jpg" alt="wolf-1" />
-				<p>
+				<p className="emphasis">
 					É um sobrevivente da Era do Gelo, originário do Pleistoceno
 					Superior, cerca de 300 mil anos atrás.[2] O sequenciamento
 					de DNA e estudos.
@@ -106,13 +106,13 @@ function Home() {
 					77 kg foram encontrados no Alasca, Canadá,[8] e na antiga
 					União Soviética.
 				</p>
-				<blockquote className="quote">
+				<blockquote className="quote col-wide">
 					<p>
 						“Há algo no uivar do lobo que tira um homem do aqui e
 						agora e o transporta para uma floresta da mente.”
 					</p>
 				</blockquote>
-				<ul>
+				<ul className="atributes">
 					<li>Surgiu: 12.000 anos</li>
 					<li>Tipo: Mamífero</li>
 					<li>Idade Média: 13 anos</li>
@@ -134,7 +134,11 @@ function Home() {
 						o lobo cinzento é ancestral do cão doméstico.
 					</p>
 				</div>
-				<img src="src/assets/imgs/wolf3.jpg" alt="wolf-3" />
+				<img
+					className="col-wide"
+					src="src/assets/imgs/wolf3.jpg"
+					alt="wolf-3"
+				/>
 			</S.Main>
 			<S.Aside>
 				<div className="advertisement">

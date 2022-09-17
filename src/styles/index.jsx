@@ -9,14 +9,17 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         margin: 0;
         a {
-            color: inherit;
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
         }
     }
     html, body, #root {
         font-family: var(--primary-font);
         height: 100%;
         width: 100%;
-        background-color: #F2F3F6; 
+        background-color: #FFFFFF; 
     }
     :root {
             --primary-font: 'Vollkorn', serif;

@@ -1,11 +1,11 @@
-const minSize = {
-	desktop: '611px',
-	sidebar: '970px',
+const maxSize = {
+	tablet: '1200px',
+	mobile: '760px',
 };
 
 const device = {
-	desktop: `(min-width: ${minSize.desktop})`,
-	sidebar: `(min-width: ${minSize.sidebar})`,
+	tablet: `(max-width: ${maxSize.tablet})`,
+	mobile: `(max-width: ${maxSize.mobile})`,
 };
 
 export default device;
