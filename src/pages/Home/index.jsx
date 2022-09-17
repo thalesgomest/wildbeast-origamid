@@ -1,6 +1,8 @@
 import * as S from './styles';
-
+import { useContext } from 'react';
+import { ThemeContext } from '../../providers/ThemeProvider';
 function Home() {
+	const { theme, toggleTheme } = useContext(ThemeContext);
 	return (
 		<S.Structure>
 			<S.Header>
@@ -12,6 +14,17 @@ function Home() {
 				</a>
 				<nav>
 					<ul>
+						<li>
+							<label className="switch">
+								<input type="checkbox"></input>
+								<span
+									className="slider"
+									onClick={() => {
+										toggleTheme(theme);
+									}}
+								></span>
+							</label>
+						</li>
 						<li>
 							<a href="#">sobre</a>
 						</li>
