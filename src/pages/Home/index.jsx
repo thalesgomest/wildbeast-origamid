@@ -1,6 +1,13 @@
 import * as S from './styles';
 import { useContext } from 'react';
 import { ThemeContext } from '../../providers/ThemeProvider';
+
+import vaca from '../../assets/icons/vaca.svg';
+import abelha from '../../assets/icons/abelha.svg';
+import gato from '../../assets/icons/gato.svg';
+import cervo from '../../assets/icons/cervo.svg';
+import ovelha from '../../assets/icons/ovelha.svg';
+import leao from '../../assets/icons/leao.svg';
 function Home() {
 	const { theme, toggleTheme } = useContext(ThemeContext);
 	return (
@@ -38,38 +45,32 @@ function Home() {
 				<ul>
 					<li>
 						<a href="#">
-							<img src="src/assets/icons/cervo.svg" alt="cervo" />
+							<img src={cervo} alt="cervo" />
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<img src="src/assets/icons/leao.svg" alt="leao" />
+							<img src={leao} alt="leao" />
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<img src="src/assets/icons/gato.svg" alt="gato" />
+							<img src={gato} alt="gato" />
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<img src="src/assets/icons/vaca.svg" alt="vaca" />
+							<img src={vaca} alt="vaca" />
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<img
-								src="src/assets/icons/ovelha.svg"
-								alt="ovelha"
-							/>
+							<img src={ovelha} alt="ovelha" />
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<img
-								src="src/assets/icons/abelha.svg"
-								alt="abelha"
-							/>
+							<img src={abelha} alt="abelha" />
 						</a>
 					</li>
 				</ul>
