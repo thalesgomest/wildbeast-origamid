@@ -20,7 +20,8 @@ const GlobalStyle = createGlobalStyle`
     }
     :root {
             --primary-font: 'Vollkorn', serif;
-            --fonte-secundaria: 'Courier New', serif;
+            --secondary-font: 'Courier New', serif;
+            --primary-color: linear-gradient(135deg, #8844EE, #B07DFB);
     }
 `;
 
