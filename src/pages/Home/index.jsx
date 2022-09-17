@@ -7,10 +7,7 @@ function Home() {
 		<S.Structure>
 			<S.Header>
 				<a href="#" className="logo">
-					<img
-						src="/src/assets/imgs/wildbeast.svg"
-						alt="Wild Beast"
-					/>
+					<img src="src/assets/imgs/wildbeast.svg" alt="Wild Beast" />
 				</a>
 				<nav>
 					<ul>
