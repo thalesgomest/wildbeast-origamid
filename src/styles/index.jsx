@@ -15,16 +15,19 @@ const GlobalStyle = createGlobalStyle`
             list-style: none;
         }
     }
+    
     html, body, #root {
         font-family: var(--primary-font);
         height: 100%;
         width: 100%;
-        background-color: #FFFFFF; 
+        background-color: ${({ theme }) => theme.background}; 
     }
     :root {
             --primary-font: 'Vollkorn', serif;
+            --font-color: ${({ theme }) => theme.font_color};
             --secondary-font: 'Courier New', serif;
             --primary-color: linear-gradient(135deg, #8844EE, #B07DFB);
+            --secondary-color: ${({ theme }) => theme.secondary_color};
     }
 `;
 

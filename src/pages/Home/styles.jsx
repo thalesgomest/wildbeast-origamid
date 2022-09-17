@@ -33,9 +33,7 @@ export const Structure = styled.div`
 
 export const Header = styled.header`
 	grid-area: header;
-	/* background: var(--primary-color); */
-	background: ${({ theme }) =>
-		theme.background ? theme.background : 'var(--primary-color)'};
+	background: var(--primary-color);
 	padding: 30px;
 	display: grid;
 	grid-template-columns: 1fr auto;
@@ -122,7 +120,7 @@ export const Header = styled.header`
 	nav a {
 		display: block;
 		padding: 10px;
-		color: ${({ theme }) => (theme.color ? theme.color : 'white')};
+		color: white;
 		font-size: 1.125em;
 		background: rgba(0, 0, 0, 0.1);
 		border-radius: 5px;
@@ -140,7 +138,7 @@ export const Header = styled.header`
 
 export const Sidenav = styled.nav`
 	grid-area: sidenav;
-	background: #fafbfc;
+	background: var(--secondary-color);
 	padding: 30px;
 
 	@media ${device.mobile} {
@@ -242,7 +240,7 @@ export const Main = styled.main`
 		font-size: 1.2em;
 		line-height: 1.6;
 		letter-spacing: -0.005em;
-		color: rgba(0, 0, 0, 0.7);
+		color: var(--font-color);
 	}
 
 	.information p + p {
@@ -343,7 +341,7 @@ export const Main = styled.main`
 
 export const Aside = styled.aside`
 	grid-area: adverts;
-	background: #fafbfc;
+	background: var(--secondary-color);
 	display: grid;
 	align-content: start;
 	padding: 30px;
@@ -353,11 +351,10 @@ export const Aside = styled.aside`
 
 export const Footer = styled.footer`
 	grid-area: footer;
-	background: ${({ theme }) =>
-		theme.background ? theme.background : 'var(--primary-color)'};
+	background: var(--primary-color);
 
 	p {
-		color: ${({ theme }) => (theme.color ? theme.color : 'white')};
+		color: white;
 		text-align: center;
 		padding: 30px;
 		font-weight: bold;

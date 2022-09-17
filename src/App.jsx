@@ -8,7 +8,13 @@ function App() {
 	const { theme } = useContext(ThemeContext);
 	return (
 		<ThemeProvider
-			theme={{ background: theme.background, color: theme.color }}
+			theme={{
+				background: theme.background,
+				primary_color: theme.primary_color,
+				secondary_color: theme.secondary_color,
+				font_color: theme.font_color,
+				font_secondary_color: theme.font_secondary_color,
+			}}
 		>
 			<GlobalStyle />
 			<Router />
