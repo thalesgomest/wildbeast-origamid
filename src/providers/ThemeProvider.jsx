@@ -8,11 +8,14 @@ export const ThemeProvider = ({ children }) => {
 	const toggleTheme = (curr) => {
 		setTheme(curr === themes.light ? themes.dark : themes.light);
 	};
+	const [pageSelected, setPageSelected] = useState('home');
 	return (
 		<ThemeContext.Provider
 			value={{
 				theme,
 				toggleTheme,
+				pageSelected,
+				setPageSelected,
 			}}
 		>
 			{children}

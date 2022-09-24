@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import device from '../../utils/deviceSizes';
+import device from '../utils/deviceSizes';
 
 export const Structure = styled.div`
 	display: grid;
@@ -66,7 +66,6 @@ export const Main = styled.main`
 		:nth-of-type(2) {
 			align-self: end;
 			width: 100%;
-			height: 100%;
 		}
 		:nth-of-type(3) {
 			width: 100%;
@@ -126,7 +125,7 @@ export const Main = styled.main`
 		}
 
 		.number {
-			font-size: 2.8em;
+			font-size: 3em;
 			line-height: 1;
 			margin: 10px auto;
 		}

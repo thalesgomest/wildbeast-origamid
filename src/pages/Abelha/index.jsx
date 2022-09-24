@@ -1,8 +1,4 @@
 import * as S from './styles';
-import Header from '../../components/Header';
-import Sidenav from '../../components/Sidenav';
-import Aside from '../../components/Aside';
-import Footer from '../../components/Footer';
 
 import abelha1 from '../../assets/imgs/abelha1.jpg';
 import abelha2 from '../../assets/imgs/abelha2.jpg';
@@ -10,9 +6,7 @@ import abelha3 from '../../assets/imgs/abelha3.jpg';
 
 function Abelha() {
 	return (
-		<S.Structure>
-			<Header />
-			<Sidenav page={'abelha'} />
+		<>
 			<S.Main>
 				<div className="title">
 					<h1>Anthophila</h1>
@@ -93,9 +87,7 @@ function Abelha() {
 				</div>
 				<img className="col-wide" src={abelha3} alt="abelha-3" />
 			</S.Main>
-			<Aside />
-			<Footer />
-		</S.Structure>
+		</>
 	);
 }
 

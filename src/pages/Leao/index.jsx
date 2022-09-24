@@ -1,8 +1,4 @@
 import * as S from './styles';
-import Header from '../../components/Header';
-import Sidenav from '../../components/Sidenav';
-import Aside from '../../components/Aside';
-import Footer from '../../components/Footer';
 
 import leao1 from '../../assets/imgs/leao1.jpg';
 import leao2 from '../../assets/imgs/leao2.jpg';
@@ -10,9 +6,7 @@ import leao3 from '../../assets/imgs/leao3.jpg';
 
 function Leao() {
 	return (
-		<S.Structure>
-			<Header />
-			<Sidenav page={'leao'} />
+		<>
 			<S.Main>
 				<div className="title">
 					<h1>Panthera leo</h1>
@@ -88,9 +82,7 @@ function Leao() {
 				</div>
 				<img className="col-wide" src={leao3} alt="leao-3" />
 			</S.Main>
-			<Aside />
-			<Footer />
-		</S.Structure>
+		</>
 	);
 }
 

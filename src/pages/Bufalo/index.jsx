@@ -1,8 +1,4 @@
 import * as S from './styles';
-import Header from '../../components/Header';
-import Sidenav from '../../components/Sidenav';
-import Aside from '../../components/Aside';
-import Footer from '../../components/Footer';
 
 import bufalo1 from '../../assets/imgs/bufalo1.jpg';
 import bufalo2 from '../../assets/imgs/bufalo2.jpg';
@@ -10,9 +6,7 @@ import bufalo3 from '../../assets/imgs/bufalo3.jpg';
 
 function Bufalo() {
 	return (
-		<S.Structure>
-			<Header />
-			<Sidenav page={'bufalo'} />
+		<>
 			<S.Main>
 				<div className="title">
 					<h1>Syncerus caffer</h1>
@@ -96,9 +90,7 @@ function Bufalo() {
 				</div>
 				<img className="col-wide" src={bufalo3} alt="bufalo-3" />
 			</S.Main>
-			<Aside />
-			<Footer />
-		</S.Structure>
+		</>
 	);
 }
 

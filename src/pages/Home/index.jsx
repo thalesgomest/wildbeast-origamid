@@ -1,8 +1,4 @@
 import * as S from './styles';
-import Header from '../../components/Header';
-import Sidenav from '../../components/Sidenav';
-import Aside from '../../components/Aside';
-import Footer from '../../components/Footer';
 
 import wolf1 from '../../assets/imgs/wolf1.jpg';
 import wolf2 from '../../assets/imgs/wolf2.jpg';
@@ -10,9 +6,7 @@ import wolf3 from '../../assets/imgs/wolf3.jpg';
 
 function Home() {
 	return (
-		<S.Structure>
-			<Header />
-			<Sidenav />
+		<>
 			<S.Main>
 				<div className="title">
 					<h1>Lobo Cinza</h1>
@@ -85,9 +79,7 @@ function Home() {
 				</div>
 				<img className="col-wide" src={wolf3} alt="wolf-3" />
 			</S.Main>
-			<Aside />
-			<Footer />
-		</S.Structure>
+		</>
 	);
 }
 

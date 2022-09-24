@@ -1,8 +1,4 @@
 import * as S from './styles';
-import Header from '../../components/Header';
-import Sidenav from '../../components/Sidenav';
-import Aside from '../../components/Aside';
-import Footer from '../../components/Footer';
 
 import cervo1 from '../../assets/imgs/cervo1.jpg';
 import cervo2 from '../../assets/imgs/cervo2.jpg';
@@ -10,9 +6,7 @@ import cervo3 from '../../assets/imgs/cervo3.jpg';
 
 function Cervo() {
 	return (
-		<S.Structure>
-			<Header />
-			<Sidenav page={'cervo'} />
+		<>
 			<S.Main>
 				<div className="title">
 					<h1>Cervus canadensis</h1>
@@ -84,9 +78,7 @@ function Cervo() {
 				</div>
 				<img className="col-wide" src={cervo3} alt="cervo-3" />
 			</S.Main>
-			<Aside />
-			<Footer />
-		</S.Structure>
+		</>
 	);
 }
 
