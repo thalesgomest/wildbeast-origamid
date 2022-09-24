@@ -66,6 +66,7 @@ export const Main = styled.main`
 		:nth-of-type(2) {
 			align-self: end;
 			width: 100%;
+			height: 100%;
 		}
 		:nth-of-type(3) {
 			width: 100%;

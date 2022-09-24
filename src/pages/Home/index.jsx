@@ -1,87 +1,18 @@
 import * as S from './styles';
-import { useContext } from 'react';
-import { ThemeContext } from '../../providers/ThemeProvider';
+import Header from '../../components/Header';
+import Sidenav from '../../components/Sidenav';
+import Aside from '../../components/Aside';
+import Footer from '../../components/Footer';
 
-import vaca from '../../assets/icons/vaca.svg';
-import abelha from '../../assets/icons/abelha.svg';
-import gato from '../../assets/icons/gato.svg';
-import cervo from '../../assets/icons/cervo.svg';
-import ovelha from '../../assets/icons/ovelha.svg';
-import leao from '../../assets/icons/leao.svg';
-import anuncio1 from '../../assets/imgs/anuncio-1.jpg';
-import anuncio2 from '../../assets/imgs/anuncio-2.jpg';
-import wildbest from '../../assets/imgs/wildbeast.svg';
 import wolf1 from '../../assets/imgs/wolf1.jpg';
 import wolf2 from '../../assets/imgs/wolf2.jpg';
 import wolf3 from '../../assets/imgs/wolf3.jpg';
 
 function Home() {
-	const { theme, toggleTheme } = useContext(ThemeContext);
 	return (
 		<S.Structure>
-			<S.Header>
-				<a href="#" className="logo">
-					<img src={wildbest} alt="Wild Beast" />
-				</a>
-				<nav>
-					<ul>
-						<li>
-							<label className="switch">
-								<input type="checkbox"></input>
-								<span
-									className="slider"
-									onClick={() => {
-										toggleTheme(theme);
-									}}
-								></span>
-							</label>
-						</li>
-						<li>
-							<a href="#">sobre</a>
-						</li>
-						<li>
-							<a href="#">animais</a>
-						</li>
-						<li>
-							<a href="#">contato</a>
-						</li>
-					</ul>
-				</nav>
-			</S.Header>
-			<S.Sidenav>
-				<ul>
-					<li>
-						<a href="#">
-							<img src={cervo} alt="cervo" />
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src={leao} alt="leao" />
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src={gato} alt="gato" />
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src={vaca} alt="vaca" />
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src={ovelha} alt="ovelha" />
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src={abelha} alt="abelha" />
-						</a>
-					</li>
-				</ul>
-			</S.Sidenav>
+			<Header />
+			<Sidenav />
 			<S.Main>
 				<div className="title">
 					<h1>Lobo Cinza</h1>
@@ -94,7 +25,7 @@ function Home() {
 					</div>
 					<div>
 						<span className="number">13</span>
-						<span className="label">kg</span>
+						<span className="label">age</span>
 					</div>
 				</div>
 				<p className="col-wide">
@@ -154,19 +85,8 @@ function Home() {
 				</div>
 				<img className="col-wide" src={wolf3} alt="wolf-3" />
 			</S.Main>
-			<S.Aside>
-				<div className="advertisement">
-					<img src={anuncio1} alt="anuncio-1" />
-				</div>
-				<div className="advertisement">
-					<img src={anuncio2} alt="anuncio-2" />
-				</div>
-			</S.Aside>
-			<S.Footer>
-				<p>
-					Thales Gomes & Origamid © 2022. Alguns direitos reservados
-				</p>
-			</S.Footer>
+			<Aside />
+			<Footer />
 		</S.Structure>
 	);
 }
