@@ -16,7 +16,6 @@ import { useContext } from 'react';
 
 export default function Router() {
 	const { pageSelected } = useContext(ThemeContext);
-	console.log(pageSelected);
 	return (
 		<BrowserRouter>
 			<S.Structure>
