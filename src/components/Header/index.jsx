@@ -7,10 +7,17 @@ import wildbest from '../../assets/imgs/wildbeast.svg';
 
 const Header = () => {
 	const navigate = useNavigate();
-	const { theme, toggleTheme } = useContext(ThemeContext);
+	const { theme, toggleTheme, setPageSelected } = useContext(ThemeContext);
+
 	return (
 		<S.Header>
-			<a className="logo" onClick={() => navigate('/')}>
+			<a
+				className="logo"
+				onClick={() => {
+					setPageSelected('home');
+					navigate('/');
+				}}
+			>
 				<img src={wildbest} alt="Wild Beast" />
 			</a>
 			<nav>

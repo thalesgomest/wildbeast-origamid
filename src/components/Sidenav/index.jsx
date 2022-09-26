@@ -6,7 +6,7 @@ import ovelha from '../../assets/icons/ovelha.svg';
 import leao from '../../assets/icons/leao.svg';
 import * as S from './styles';
 import { useNavigate } from 'react-router-dom';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { ThemeContext } from '../../providers/ThemeProvider';
 
 const Sidenav = ({ page }) => {
